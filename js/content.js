@@ -2,15 +2,28 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Content {
     content(req, res) {
-        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-        res.write("<h1 style='color: red;'>Hello Node.js!</h1>");
-        res.write("<h1 style='color: green;'>Hello TypeScript!</h1>");
-        res.write("<h1 style='color: blue;'>Hello Heroku!</h1>");
-        res.write("<h1 style='color: black;'>Hello Jedlik!</h1>");
-        res.write("<b>Fejlesztői környezet telepítésének leírása, forráskód GitHub repository:</b><br>");
-        res.write("<a href='https://github.com/Xeno1080/Elagazasok target='_blank'>" +
-            "https://github.com/Xeno1080/Elagazasok</a><br>");
-        res.end();
+        res.write("<h1 style='color: red;'>Elágazások</h1>");
+
+        var i = true;
+        if (i) {
+            res.write("<p>if true</p>");
+            i = false;
+        } else {
+            res.write("<p>else true</p>");
+        }
+        if (i) {
+            res.write("<p>if true</p>");
+        } else {
+            res.write("<p>else true</p>");
+        }
+
+        switch ("A") {
+            case "A":
+                res.write("<p>switch-case elágazás </p>");
+                break;
+            default:
+                break;
+        }
     }
 }
 exports.default = Content;
