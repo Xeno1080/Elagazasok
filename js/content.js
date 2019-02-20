@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Content {
     content(req, res) {
+        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
         res.write("<h1 style='color: red;'>Elagazasok</h1>");
 
         var i = true;
