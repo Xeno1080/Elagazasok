@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Content {
     content(req, res) {
-        res.write("<h1 style='color: red;'>Elágazások</h1>");
+        res.write("<h1 style='color: red;'>Elagazasok</h1>");
 
         var i = true;
         if (i) {
@@ -19,7 +19,7 @@ class Content {
 
         switch ("A") {
             case "A":
-                res.write("<p>switch-case elágazás </p>");
+                res.write("<p>switch-case elagazas </p>");
                 break;
             default:
                 break;
